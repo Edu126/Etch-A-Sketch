@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@500&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+body {
+    background-color: #333333;
+    font-family: "Work Sans", sans-serif;
+}
+
+#container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.single-row {
+    display: grid;
+}
+
+.color-changing {
+    animation: colorful 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    0% {
+        background-color: #FA0000;
+    }
+    20% {
+        background-color: #0152DA;
+    }
+    40% {
+        background-color: #24FA97;
+    }
+    60% {
+        background-color: #FEDE22;
+    }
+    80% {
+        background-color: #FA24FA;
+    }
+    100% {
+        background-color: #FA0000;
+    }
+}
+
+.text-changing {
+    animation: colorful-text 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful-text {
+    0% {
+        color: #FA0000;
+    }
+    20% {
+        color: #0152DA;
+    }
+    40% {
+        color: #24FA97;
+    }
+    60% {
+        color: #FEDE22;
+    }
+    80% {
+        color: #FA24FA;
+    }
+    100% {
+        color: #FA0000;
+    }
+}
+
+/*TITLE*/
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#intro h1 {
+    font-family: 'Dela Gothic One', cursive;
+    color: #f3f3f3;
+    margin-right: 100px;
+    font-size: 3em;
+}
+
+/* NEW GRID BUTTON */
+#btnRequest {
+    background: transparent;
+    border: 2px solid #f3f3f3;
+    outline: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f3f3f3;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#btnRequest:hover {
+    background-color: #f3f3f3;
+    color: #333333;
+}
